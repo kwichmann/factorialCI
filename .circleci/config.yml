@@ -6,14 +6,12 @@ version: 2
 jobs:
   build:
     docker:
-      # specify the version you desire here
       - image: circleci/node:8.9.4
-
-    working_directory: ~/factorialCI/server
 
     steps:
       - checkout
-      - run: npm install
-      - run: npm test
+      - run:
+        - server: npm install
+        - server: npm test
 
 
