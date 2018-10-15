@@ -9,7 +9,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node:8.9.4
 
-    working_directory: ~/repo/server
+    working_directory: ~/factorialCI/server
 
     steps:
       - checkout
