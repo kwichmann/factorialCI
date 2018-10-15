@@ -10,8 +10,7 @@ jobs:
 
     steps:
       - checkout
-      - run:
-        - server: npm install
-        - server: npm test
+      - run: cd server && npm install
+      - run: cd server && npm test
 
 
